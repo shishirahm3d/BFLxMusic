@@ -32,6 +32,7 @@ const config_1 = require("../utils/config");
 const i18n_1 = require("../utils/i18n");
 const MissingPermissionsException_1 = require("../utils/MissingPermissionsException");
 const { ActivityType } = require('discord.js');
+const keep_alive = require('./keep_alive.js')
 class Bot {
     client;
     prefix = "/";
