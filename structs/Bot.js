@@ -46,7 +46,7 @@ class Bot {
         this.client.login(config_1.config.TOKEN);
         this.client.on("ready", () => {
             console.log(`${this.client.user.username} ready!`);
-			this.client.user.setActivity('/play and /help', { type: ActivityType.Listening });
+			this.client.user.setActivity('/help & /play', { type: ActivityType.Listening });
             this.registerSlashCommands();
         });
         this.client.on("warn", (info) => console.log(info));
